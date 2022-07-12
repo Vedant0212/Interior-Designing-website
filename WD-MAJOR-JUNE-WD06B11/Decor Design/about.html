@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+               $(".menu-icon").on("click", function() {
+                     $("nav ul").toggleClass("showing");
+               });
+         });
+   
+         // Scrolling Effect
+   
+         $(window).on("scroll", function() {
+               if($(window).scrollTop()) {
+                     $('nav').addClass('black');
+               }
+   
+               else {
+                     $('nav').removeClass('black');
+               }
+         })
+   </script>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            letter-spacing: 0.5px;
+            word-spacing: 3px;
+        }
+        body{
+            background-color: #18181F;
+            height: 50px;
+            color: rgba(225, 225, 225, 0.8);
+        }
+        h1{
+            font-weight: 700;
+        }
+        .text{
+            width: 100%;
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488901512066-cd403111aeb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+            background-size: cover;
+            font-size: 5rem;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 0 0 1px #fff;
+        }
+        .container{
+            margin-top: 80px;
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+        }
+        .main-text{
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        hr{
+            margin-top: 60px;
+            border: 1px solid #CFD8DC;
+        }
+        .main-text-below{
+            font-family: 'Nunito', sans-serif;
+            margin-top: 120px;
+        }
+        .span-1{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .span-2{
+            font-size: 2rem;
+        }
+        .column-text{
+            margin-top: 40px;
+        }
+        h4{
+            font-weight: 700;
+        }
+        .column-desc{
+            text-align: center;
+        }
+        .heavy{
+            font-weight: 700;
+        }
+        button{
+            height: 50px;
+            margin-top: 20px;
+            font-weight: 700;
+        }
+        #testimonials{
+            color: #fff;
+            text-align: center;
+            background-color: #ef8172;
+        }
+        #testimonials h2{
+            font-size: 3rem;
+            line-height: 1.3;
+        }
+        .testimonial-image{
+            width: 10%;
+            border-radius: 100%;
+            margin: 20px;
+        }
+        #press{
+            background-color:#ef8172;
+            text-align: center;
+            padding-bottom: 3%;
+        }
+        .press-logo{
+            width:15%;
+            margin:20px 20px 50px;
+        }
+        .carousel-item{
+            padding:7% 15%;
+        }
+       
+        #animate-text{
+  		    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  			animation-name: fadeInDown;
+        }
+        @keyframes fadeInDown{
+            from {
+                    opacity:0;
+                    -webkit-transform: translatey(10px);
+                    -moz-transform: translatey(10px);
+                    -o-transform: translatey(10px);
+                    transform: translatey(10px);
+                }
+            to {
+                opacity:1;
+                -webkit-transform: translatey(0);
+                -moz-transform: translatey(0);
+                -o-transform: translatey(0);
+                transform: translatey(0);
+            }
+        }
+        img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 100px;
+            width: 100px;
+        }
+        .description{
+            font-size: 1.3rem;
+        }
+        /*NAV*/
+        
+      h4{
+          margin-top: 50px;
+      }
+
+    </style>
+</head><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Satisfy&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function() {
+               $(".menu-icon").on("click", function() {
+                     $("nav ul").toggleClass("showing");
+               });
+         });
+   
+         // Scrolling Effect
+   
+         $(window).on("scroll", function() {
+               if($(window).scrollTop()) {
+                     $('nav').addClass('black');
+               }
+   
+               else {
+                     $('nav').removeClass('black');
+               }
+         })
+   </script>
+        <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            letter-spacing: 0.5px;
+            word-spacing: 3px;
+        }
+        body{
+            background-color: #18181F;
+            height: 50px;
+            color: rgba(225, 225, 225, 0.8);
+        }
+        h1{
+            font-weight: 700;
+        }
+        .text{
+            width: 100%;
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488901512066-cd403111aeb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
+            background-size: cover;
+            font-size: 5rem;
+            background-position: center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-shadow: 0 0 1px #fff;
+        }
+        .container{
+            margin-top: 80px;
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+        }
+        .main-text{
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        hr{
+            margin-top: 60px;
+            border: 1px solid #CFD8DC;
+        }
+        .main-text-below{
+            font-family: 'Nunito', sans-serif;
+            margin-top: 120px;
+        }
+        .span-1{
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        .span-2{
+            font-size: 2rem;
+        }
+        .column-text{
+            margin-top: 40px;
+        }
+        h4{
+            font-weight: 700;
+        }
+        .column-desc{
+            text-align: center;
+        }
+        .heavy{
+            font-weight: 700;
+        }
+        button{
+            height: 50px;
+            margin-top: 20px;
+            font-weight: 700;
+        }
+        #testimonials{
+            color: #fff;
+            text-align: center;
+            background-color: #ef8172;
+        }
+        #testimonials h2{
+            font-size: 3rem;
+            line-height: 1.3;
+        }
+        .testimonial-image{
+            width: 10%;
+            border-radius: 100%;
+            margin: 20px;
+        }
+        #press{
+            background-color:#ef8172;
+            text-align: center;
+            padding-bottom: 3%;
+        }
+        .press-logo{
+            width:15%;
+            margin:20px 20px 50px;
+        }
+        .carousel-item{
+            padding:7% 15%;
+        }
+        
+        #animate-text{
+  		    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+  			animation-name: fadeInDown;
+        }
+        @keyframes fadeInDown{
+            from {
+                    opacity:0;
+                    -webkit-transform: translatey(10px);
+                    -moz-transform: translatey(10px);
+                    -o-transform: translatey(10px);
+                    transform: translatey(10px);
+                }
+            to {
+                opacity:1;
+                -webkit-transform: translatey(0);
+                -moz-transform: translatey(0);
+                -o-transform: translatey(0);
+                transform: translatey(0);
+            }
+        }
+        img{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            height: 100px;
+            width: 100px;
+        }
+        .description{
+            font-size: 1.3rem;
+        }
+        /*NAV*/
+        
+      h4{
+          margin-top: 50px;
+      }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="menu-icon"> <i class="fa fa-bars fa-2x"></i> </div>
+        <div class="logo"> Decor Design </div>
+        <div class="menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="our_projects.html">Our Projects</a></li>
+        <li><a href="about.html"><span class="selected" style="font-family: 'Josefin Sans', sans-serif;">About Us</span></a></li>
+        <li><a href="about_developer.html">About Developer</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <span class="searchc">
+      		<input type="text" placeholder="Search.." name="search">
+      		<!--<button><i class="fa fa-search"></i></button>-->
+    	</span>
+      </ul>
+        </div>
+    </nav>
+
+    <div class="text">
+        <h1 id="animate-text" style="font-size: 5rem;font-family:'Satisfy', cursive; text-shadow: 2px 4px 6px black;">Remarkably Simple</h1>
+    </div>
+
+    <div class="container">
+        <p class="main-text" id="animate-text">We are an architectural practice devoted to <span class="heavy">simplicity</span>. We are led by our desire to create <span class="heavy">meaningful spaces</span> that enhance the quality of your life.</p>
+        <hr>
+        <div class="main-text-below" id="animate-text" style="margin-top:80px;">
+            <p>
+                <span class="span-1" id="animate-text">Radical Transparency</span> 
+                <br><br> 
+                <span class="span-2" id="animate-text">"<b>Honesty is the best policy</b>" is not just a quote for us,</span>
+                <br>
+                <span class="span-2" id="animate-text">but our core philosophy and everything we do revolves around it.</span>
+            </p>
+        </div>
+        <div class="row column-text" id="animate-text" style="margin-top:80px;">
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <h4>NO COMMISSIONS</h4>
+                <img src="./img/no-comission.png" alt="" style="margin:20px 0;">
+                <br>
+                <p class="description">We never accept commissions from material vendors or contractors. This enables us to maintain transparency and take the right decisions for your project.</p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <h4>UNIQUE DESIGN</h4>
+                <img src="./img/heart.png" alt="" style="margin:20px 0;">
+                <br>
+                <p class="description">
+                    We create unique designs which speaks about your personality to the World in a beautiful and creative way.Get customized solutions for all your unique requirements
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <h4>HONEST WORK</h4>
+                <img src="./img/circle-check.png" alt="" style="margin:20px 0;">
+                <br>
+                <p class="description">WE COMMIT, WE DELIVER.</p>
+                <p class="description">We never make false commitments. We are very straightforward about what we can deliver and when we can deliver.</p>
+            </div>
+        </div>
+        <br><br>
+        <button type="button" class="btn btn-outline-dark" onclick="location.href = 'contact.html';"><span  style="padding: 10px; color: white;" id="button-hire">HIRE US</span></button>
+        <hr class="hr-below">
+        <div class="main-text-below" id="animate-text">
+            <p><h2> <b> QUOTES WE LIVE BY </b> </h2></p>
+            <br>
+        </div> 
+    </div>
+    <!-- SLIDER-->
+    <section id="testimonials">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h2>Make it simple, but significant.</h2>
+                <em>Don Draper</em>
+            </div>
+            <div class="carousel-item">
+                <h2 class="testimonial-text">Design is intelligence made visible.</h2>
+                <em>Alina Wheeler</em>
+            </div>
+            <div class="carousel-item">
+                <h2 class="testimonial-text">Design is not just what it looks like and feels like. Design is how it works.</h2>
+                <em>Steve Jobs</em>
+            </div>
+            <div class="carousel-item">
+                <h2 class="testimonial-text">Design can be art. Design can be aesthetics. Design is so simple, that's why it is so complicated.</h2>
+                <em>Paul R.</em>
+            </div>
+            <div class="carousel-item">
+                <h2 class="testimonial-text">Every great design begins with an even better story.</h2>
+                <em>Lorinda Mamo</em>
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!--SOCIAL LINKS-->
+    <!--<section class="footer">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <i class="fa fa-copyright"></i>
+        <span style="margin-left:10px;">Design Decor</span>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <a href="#" style="float: right;" class="text-white">Terms and Conditions</a>
+        <a href="#" style="float: right;clear: both;" class="text-white">Privacy Policy</a>
+</div>
+    </section>-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+<footer id="footer" class="footer-1">
+<div class="main-footer widgets-dark typo-light">
+<div class="container">
+<div class="row">
+  
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="widget subscribe no-box">
+<h5 class="widget-title">DECOR DESIGN<span></span></h5>
+<p>We are led by our desire to create meaningful spaces that enhance the quality of your life. </p>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="widget no-box">
+<h5 class="widget-title">VIEW OUR PROJECTS<span></span></h5>
+<p>See our finished Projects</p>
+<a class="btn" href="our_projects.html" target="_self">Our Projects</a>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-4">
+
+<div class="widget no-box">
+<h5 class="widget-title">CONTACT US<span></span></h5>
+
+<p><a href="mailto:ddesign603@gmail.com" title="glorythemes">ddesign603@gmail.com</a></p>
+<ul class="social-footer2">
+<li><a href="https://www.youtube.com/"><i class="fa fa-facebook"></i></a></li>
+<li><a href="https://www.facebook.com/"><i class="fa fa-youtube"></i></a></li>
+<li><a href="https://twitter.com"><i class="fa fa-twitter"></i></a></li>
+<li><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+  
+<div class="footer-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<p>Copyright DECOR DESIGN © 2020. All rights reserved.</p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</html>

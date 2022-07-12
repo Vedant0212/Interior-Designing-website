@@ -1,0 +1,25 @@
+How we connected our form with SQL Database :-
+
+1. We recieved the data from POST from FORM and stored them in differenet variables.
+$name = $_POST['name'];
+$email = $_POST['email'];
+$contactNumber = $_POST['contactNumber'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+2. Create connection with SQL Database by instantiating.
+$conn = new mysqli('localhost','root','','data');
+URL=localhost
+username=root
+password=''
+database name=data
+
+3. Made a SQL statement and stored that in a variable.
+        $stmt = $conn->prepare("insert into registration(name, email, contactNumber, subject , message) values(?, ?, ?, ?, ?)");
+table name = registration 
+
+4. Placed variables in the statement.
+$stmt->bind_param("sssss",$name, $email, $contactNumber, $subject, $message);
+
+5. Executed the update query on Database.
+$stmt->execute();

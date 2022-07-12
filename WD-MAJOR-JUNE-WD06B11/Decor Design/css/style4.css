@@ -1,0 +1,165 @@
+/* Profile Cards */
+body {
+     background-color: #18181F;
+}
+a {
+    text-decoration: none;
+}
+.content-about {
+    padding-top: 150px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: 3%;
+    text-align: center;
+    font-family: arial;
+    flex-basis: 500px;
+    background-color: #fff;
+    animation: fadeIn 1s;
+}
+/*Profile Cards on hover*/
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+/* Position of profile*/
+.titlepos {
+    color: grey;
+    font-size: 18px;
+}
+/*Remains Hidden until clicked*/
+.hidden1 {
+
+    display: none;
+}
+
+/*Card Links*/
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+/*Container for all cards*/
+.dev-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    z-index: 0;
+
+
+}
+/*Provides Background for cards*/
+.background-dev {
+    background-image: url(../img/wt2.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 0;
+
+
+}
+/*Disply picture of profile card*/
+.card img {
+    height: 300px;
+    filter: grayscale(0%);
+
+}
+
+.rehidden {
+    display: none;
+
+}
+/*Background for Meet the Team */
+.btnmtt {
+    background-color: black;
+    height: 30vh;
+    background-image: url(trtr.jpg);
+    background-position: center center;
+    background-size: cover;
+    z-index: 2;
+}
+/*Thin border between two section*/
+.mttborder {
+    background-color: #ffbb73;
+    height: 3px;
+    z-index: 7;
+    box-shadow: 0px 0px 10px #fff;
+
+
+}
+/*Makes card appear , opacity 0->1*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.3;
+    }
+
+    60% {
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/*Meet the team button*/
+.btnmtt button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-size: 2em;
+    outline: none;
+    border: solid 3px #ffbb73;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffbb73;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #ffbb73;
+
+}
+/*Meet the team button on hover */
+.btnmtt button:hover {
+    box-shadow: 0px 0px 10px #ffbb73, 0px 0px 20px #ffbb73, 0px 0px 50px #ffbb73;
+
+    transform: translate(-50%, -50%);
+
+    transition: all 0.3s ease;
+
+}
+/*Responsive */
+@media screen and (max-width: 1024px) {
+    .card {
+        max-width: 250px;
+        margin: 4% 7%;
+        flex-basis: 700px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        max-width: 250px;
+        margin: 5% 7%;
+        flex-basis: 900px;
+    }
+
+    .btnmtt button {
+        font-size: 1.5em;
+    }
+
+}

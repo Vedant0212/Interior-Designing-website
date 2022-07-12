@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Baloo+Tamma+2:wght@500&display=swap');
+
+
+/* CSS Document */
+a {
+    text-decoration: none;
+}
+
+/* ----------Services Part CSS-------------------- */
+.sheading{
+	margin-top: 90px;
+}
+.cont {
+      background-image: url("../img/123.jpg");
+      padding: 30px;
+      padding-top: 12px;
+      width: 100%;
+      height: 100%;
+	background-position: center;
+	background-size: cover;
+      box-sizing: border-box;
+}
+
+.content {
+      /*margin: 90px;*/
+      background: rgba(255, 255, 255, 0.07);
+      padding: 20px;
+      padding-bottom: 35px;
+      color: #ffffff;
+
+}
+  .cont h1 {
+  font-family: 'Trebuchet MS'; 
+  color: white; 
+  padding-top: 10px;
+  text-align: center; 
+  font-size: 100px; 
+  text-shadow: 4px 8px 12px black;
+ }   
+.content p {
+      margin: 25px;
+  
+      font-size: 25px;
+      
+}
+
+.list {
+font-size: 30px;
+      font-family: 'Sriracha', cursive;
+	letter-spacing: 2px;
+	padding: 2px;
+
+}    
+.container li{
+	padding: 7px 0px;
+	padding-top: 5px;
+      padding-bottom: 5px;
+	text-shadow: 1px 1px 1px #000;
+}
+.content li:hover {
+      
+      font-weight: bolder;
+      background-color: rgba(0, 0, 0, 0.274);
+	
+}
+/* ------------------Services part CSS Code End----------------------------*/
+
+/* Mobile*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+	.content {
+      margin: 0px;
+      padding-bottom: 35px;
+      
+
+}
+ .cont h1 {
+ 
+  font-size: 40px; 
+  
+ }   
+.content p {
+      margin: 5px;
+  
+      font-size: 20px;
+      
+}
+
+	
+.btn{background-color: #ff8d1e; color:#fff;}
+        
+
+}
+
